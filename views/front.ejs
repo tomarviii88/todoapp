@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>To Do App</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js" integrity=""></script>
+    <script src="add.js"></script>
+    <style>
+    li:hover{
+        text-decoration: line-through;
+    }
+    </style>
+    </head>
+    <body>
+        <h1> TO DO LIST</h1>
+        <input type="text" placeholder="Enter your to do item" name="todo" id="to" required>
+        <button type="button" id="add">Add To Do</button>
+        <ul>
+            <% todos.forEach((it)=>{ %>
+               <li><%= it.item %> </li>
+            <% }) %>
+        </ul>
+    </body>
+</html>
